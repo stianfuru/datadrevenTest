@@ -1,0 +1,32 @@
+[
+    {
+       "organisasjonsnummer" : "999007228",
+       "navn" : "SOCO NORGE AS",
+       "poststed" : "Oslo",
+       "postnummer" : "0164"
+    },
+    {
+        "organisasjonsnummer" : "997058925",
+        "navn" : "OSLOMET - STORBYUNIVERSITETET",
+        "poststed" : "Oslo",
+        "postnummer" : "0167"
+    },
+    {
+        "organisasjonsnummer" : "974761076",
+        "navn" : "SKATTEETATEN",
+        "poststed" : "Oslo",
+        "postnummer" : "0663"
+    },
+    {
+        "organisasjonsnummer" : "910909088",
+        "navn" : "SOPRA STERIA AS",
+        "poststed" : "Oslo",
+        "postnummer" : "0185" 
+    },
+    {
+        "organisasjonsnummer" : "977302390",
+        "navn" : "INMETA CONSULTING AS",
+        "poststed" : "Oslo",
+        "postnummer" : "0402" 
+    }
+]

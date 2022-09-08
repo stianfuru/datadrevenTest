@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "f1de9649-e1c4-416d-90d6-0511ad79668b",
+		"name": "Datadreven test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23176263"
+	},
+	"item": [
+		{
+			"name": "Get firma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonResponse = JSON.parse(responseBody);",
+							"",
+							"var navn = pm.iterationData.get(\"navn\");",
+							"var postnummer = pm.iterationData.get(\"postnummer\");",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(postnummer);",
+							"});",
+							"",
+							"console.log(\"Organisasjon : \"+navn)",
+							"",
+							"console.log(\"Postnummer fra fil : \"+postnummer+\".\\n Postnummer fra register : \"+jsonResponse.forretningsadresse.postnummer)",
+							"",
+							"console.log(jsonResponse.forretningsadresse)",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "data.brreg.no/enhetsregisteret/api/enheter/{{organisasjonsnummer}}",
+					"host": [
+						"data",
+						"brreg",
+						"no"
+					],
+					"path": [
+						"enhetsregisteret",
+						"api",
+						"enheter",
+						"{{organisasjonsnummer}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Orgnr",
+			"value": ""
+		}
+	]
+}
