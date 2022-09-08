@@ -26,7 +26,6 @@
 							"",
 							"console.log(\"Postnummer fra fil : \"+postnummer+\".\\n Postnummer fra register : \"+jsonResponse.forretningsadresse.postnummer)",
 							"",
-							"console.log(jsonResponse.forretningsadresse)",
 							"",
 							"",
 							"",
